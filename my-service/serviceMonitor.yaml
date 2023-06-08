@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: my-go-app
+  labels:
+    monitor: my-go-app
+spec:
+  selector:
+    matchLabels:
+      app: my-go-app
+  endpoints:
+  - port: metrics
+    interval: 15s

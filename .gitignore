@@ -1,0 +1,3 @@
+**.DS_Store**
+my-kube-prom/manifests/
+my-kube-prom/vendor/
